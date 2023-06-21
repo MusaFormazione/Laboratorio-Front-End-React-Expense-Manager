@@ -20,8 +20,8 @@ function Expense({expense, deleteExpense, editExpense}) {
         <h2 className='text-xl font-bold'>{expense.amount} €</h2>
       </div>
       <div className='flex'>
-        <button className='btn btn-square btn-secondary m-2' onClick={() => deleteExpense(expense.id)}>X</button>
         <EditExpense expense={expense} editExpense={editExpense}/>
+        <button className='btn btn-square btn-secondary m-2' onClick={() => deleteExpense(expense.id)}>X</button>
       </div>
     </div>
   )
